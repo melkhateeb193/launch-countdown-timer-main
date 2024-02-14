@@ -6,12 +6,11 @@ function setTime ()
     const Minites = date.getMinutes().toString().padStart(2,0);
     const seconds = date.getSeconds().toString().padStart(2,0);
 
-    document.getElementById('Days-card').textContent=days;
-    document.getElementById('Hours-card').textContent=hours;
-    document.getElementById('MINUTES-card').textContent=Minites;
-    document.getElementById('SECONDS-card').textContent=seconds;
+    document.getElementById('days-span-number').textContent=days;
+    document.getElementById('Hours-span-number').textContent=hours;
+    document.getElementById('MINUTES-span-number').textContent=Minites;
+    document.getElementById('SECONDS-span-number').textContent=seconds;
 }
-
 
 
 setTime()
